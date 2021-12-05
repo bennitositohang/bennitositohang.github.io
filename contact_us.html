@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="http://fonts.cdnfonts.com/css/macklin-sans" rel="stylesheet">
+</head>
+<body style="background-color: #cccccc;background-image: linear-gradient(#d1e6f9,#f2fafe);width: 100%;height:1000px">
+    <nav class="navbar navbar-expand-sm p-4  bg-light navbar-dark justify-content-center">
+       <div style="margin-right: 240px;">
+            <a class="navbar-brand" href="#">
+              <img src="vivo hover.png" alt="Logo" style="width: 100px;">
+            </a>
+        </div>
+          
+        <div style="margin-right: 355px;">
+            <ul class="navbar-nav">
+                <li class="nav-item" style="padding-right: 25px;">
+                    <a class="nav-link" href="index.html" style="color:black;">Home</a>
+                  </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="biodata.html" style="color:black;">Biodata</a>
+              </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="gambar.html" style="color:black;">Gambar</a>
+              </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="contact_us.html" style="color:black;">Contact Us</a>
+              </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="vivo.html" style="color:black;">Visit vivo</a>
+              </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="https://unai.edu" style="color:black;">UNAI</a>
+              </li>
+              <li class="nav-item" style="padding-right: 25px;">
+                <a class="nav-link" href="https://fti.unai.edu" style="color:black;">FTI UNAI</a>
+              </li>
+            </ul>
+        </div>
+      </nav>
+
+      <div class="container" style="margin-left: 20px;">
+        <br><br>
+        <form action="contact.php" method="POST">
+            <fieldset>
+            <legend style="color: #000;padding: 3px 6px;">Biodata</legend>
+            <br><br>
+            <p>
+                <label>Nama:</label>
+                <input type="text" name="nama" placeholder="Nama lengkap..." />
+            </p>
+            <p>
+              <label>Email:</label>
+              <input type="email" name="email" placeholder="Your email..." />
+          </p>
+            <p>
+                <label>Username:</label>
+                <input type="text" name="username" placeholder="Username..." />
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" name="password" placeholder="Passowrd..." />
+            </p>
+            <p>
+                <label>Jenis kelamin:</label>
+                <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+                <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+            </p>
+            <p>
+                <label>Agama:</label>
+                <select name="agama">
+                    <option value="islam">Islam</option>
+                    <option value="kristen">Kristen</option>
+                    <option value="hindu">Hindu</option>
+                    <option value="budha">Budha</option>
+                </select>
+            </p>
+            <p>
+                <label> Alamat:</label>
+                <textarea name=" Alamat"></textarea>
+            </p>
+            <form action="/action_page.php">
+                   <label> Hobby:</label><br>
+                    <input type="checkbox" id="hobby1" name="hobby1" value="Berenang">
+                    <label for="hobby1"> Hobby saya berenang</label><br>
+                    <input type="checkbox" id="hobby2" name="hobby2" value="Futsal">
+                    <label for="hobby2"> Hobby saya futsal</label><br>
+                    <input type="checkbox" id="hobby3" name="hobby3" value="Basket">
+                    <label for="hobby3"> Hobby saya basket</label><br><br>
+            <p>
+                <input type="submit" name="submit" value="Submit" />
+            </p>
+      </div>
+
+    </body>
+    </html>
